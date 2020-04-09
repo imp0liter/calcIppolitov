@@ -21,6 +21,7 @@ namespace Calculator
         int count;
         bool znak = true;
 
+
         private void button17_Click(object sender, EventArgs e) // вывод нуля
         {
             textBox1.Text = textBox1.Text + 0;
@@ -236,12 +237,55 @@ namespace Calculator
 
         }
 
+        private void radioButton1_CheckedChanged(object sender, EventArgs e) // конвертирование в двоичную
+        {
+            if (radioButton1.Checked)
+            {
+                int i = Convert.ToInt32(textBox2.Text);
+                textBox3.Text = Convert.ToString(i, 2);
+            }
+        }
 
-        private void Form1_Load(object sender, EventArgs e) // окно
+        private void radioButton2_CheckedChanged(object sender, EventArgs e) // конвертирование в восьмеричную
+        {
+            if (radioButton2.Checked)
+            {
+                int i = Convert.ToInt32(textBox2.Text);
+                textBox3.Text = Convert.ToString(i, 8);
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e) // конвертирование в шеснадцатиричную
+        {
+            if (radioButton3.Checked)
+            {
+                int i = Convert.ToInt32(textBox2.Text);
+                textBox3.Text = Convert.ToString(i, 16);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) // текстбокс калькулятора
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e) // текстбокс ввода переменной для конвертации 
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e) // текстбокс для вывода результата конвертации
+        {
+
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e) // окно программы
         {
 
         }
         
+
     }   
 
 }
