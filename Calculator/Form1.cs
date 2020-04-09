@@ -22,57 +22,57 @@ namespace Calculator
         bool znak = true;
 
 
-        private void button17_Click(object sender, EventArgs e) // вывод нуля
+        private void Zero_Click(object sender, EventArgs e) // вывод нуля
         {
             textBox1.Text = textBox1.Text + 0;
         }
 
-        private void button18_Click(object sender, EventArgs e) // вывод запятой
+        private void zapyataya_Click(object sender, EventArgs e) // вывод запятой
         {
             textBox1.Text = textBox1.Text + ",";
         }
 
-        private void button13_Click(object sender, EventArgs e) // вывод 1
+        private void One_Click(object sender, EventArgs e) // вывод 1
         {
             textBox1.Text = textBox1.Text + 1;
         }
 
-        private void button14_Click(object sender, EventArgs e) // вывод 2
+        private void Two_Click(object sender, EventArgs e) // вывод 2
         {
             textBox1.Text = textBox1.Text + 2;
         }
 
-        private void button15_Click(object sender, EventArgs e) // вывод 3
+        private void three_Click(object sender, EventArgs e) // вывод 3
         {
             textBox1.Text = textBox1.Text + 3;
         }
 
-        private void button9_Click(object sender, EventArgs e) // вывод 4
+        private void chetire_Click(object sender, EventArgs e) // вывод 4
         {
             textBox1.Text = textBox1.Text + 4;
         }
 
-        private void button10_Click(object sender, EventArgs e) // вывод 5
+        private void five_Click(object sender, EventArgs e) // вывод 5
         {
             textBox1.Text = textBox1.Text + 5;
         }
 
-        private void button11_Click(object sender, EventArgs e) // вывод 6
+        private void six_Click(object sender, EventArgs e) // вывод 6
         {
             textBox1.Text = textBox1.Text + 6;
         }
 
-        private void button5_Click(object sender, EventArgs e) // вывод 7
+        private void seven_Click(object sender, EventArgs e) // вывод 7
         {
             textBox1.Text = textBox1.Text + 7;
         }
 
-        private void button6_Click(object sender, EventArgs e) // вывод 8
+        private void vosem_Click(object sender, EventArgs e) // вывод 8
         {
             textBox1.Text = textBox1.Text + 8;
         }
 
-        private void button7_Click(object sender, EventArgs e) // вывод 9
+        private void devyat_Click(object sender, EventArgs e) // вывод 9
         {
             textBox1.Text = textBox1.Text + 9;
         }
@@ -133,7 +133,7 @@ namespace Calculator
             }
         }
 
-        private void button4_Click(object sender, EventArgs e) // плюсик
+        private void plus_Click(object sender, EventArgs e) // плюсик
         {
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -143,7 +143,7 @@ namespace Calculator
 
         }
 
-        private void button8_Click(object sender, EventArgs e) // минусик
+        private void minus_Click(object sender, EventArgs e) // минусик
         {
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -152,7 +152,7 @@ namespace Calculator
             znak = true;
         }
 
-        private void button12_Click(object sender, EventArgs e) // умножение
+        private void umnojenie_Click(object sender, EventArgs e) // умножение
         {
             a = float.Parse(textBox1.Text);
             textBox1.Clear();
@@ -161,7 +161,7 @@ namespace Calculator
             znak = true;
         }
 
-        private void button16_Click(object sender, EventArgs e) // деление
+        private void delenie_Click(object sender, EventArgs e) // деление
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -170,7 +170,7 @@ namespace Calculator
             znak = true;
         }
 
-        private void button1_Click(object sender, EventArgs e) // синусы        
+        private void sin_Click(object sender, EventArgs e) // синусы        
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -178,7 +178,7 @@ namespace Calculator
             label1.Text = a.ToString() + "Sin";
         }
 
-        private void button2_Click(object sender, EventArgs e) // косинусы
+        private void cos_Click(object sender, EventArgs e) // косинусы
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -186,7 +186,7 @@ namespace Calculator
             label1.Text = a.ToString() + "Cos";
         }
 
-        private void button20_Click(object sender, EventArgs e) // тангенс
+        private void tg_Click(object sender, EventArgs e) // тангенс
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -194,7 +194,7 @@ namespace Calculator
             label1.Text = a.ToString() + "Tan";
         }
 
-        private void button21_Click(object sender, EventArgs e) // котангенс
+        private void ctg_Click(object sender, EventArgs e) // котангенс
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -202,7 +202,7 @@ namespace Calculator
             label1.Text = a.ToString() + "Ctg";
         }
 
-        private void button22_Click(object sender, EventArgs e) // квадратный корень
+        private void koren_Click(object sender, EventArgs e) // квадратный корень
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -210,7 +210,7 @@ namespace Calculator
             label1.Text = a.ToString() + "Sqrt";
         }
 
-        private void button23_Click(object sender, EventArgs e) // возведение в квадрат
+        private void kvadrat_Click(object sender, EventArgs e) // возведение в квадрат
         {
             a = double.Parse(textBox1.Text);
             textBox1.Clear();
@@ -219,14 +219,14 @@ namespace Calculator
         }
 
 
-        private void button19_Click(object sender, EventArgs e) // кнопка "равно"
+        private void Ravno_Click(object sender, EventArgs e) // кнопка "равно"
         {
             calculate();
             label1.Text = "";
         }
 
 
-        private void button3_Click(object sender, EventArgs e) // стереть всё
+        private void steret_Click(object sender, EventArgs e) // стереть всё
         {
             textBox1.Text = "";
             label1.Text = "";

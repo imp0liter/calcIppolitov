@@ -40,7 +40,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.One = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -54,15 +54,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.Закладка2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.tabControl1.SuspendLayout();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Закладка2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
@@ -88,7 +88,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Стереть(всё)";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.steret_Click);
             // 
             // button4
             // 
@@ -98,7 +98,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "+";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.plus_Click);
             // 
             // button5
             // 
@@ -108,7 +108,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "7";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.seven_Click);
             // 
             // button6
             // 
@@ -118,7 +118,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "8";
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.vosem_Click);
             // 
             // button7
             // 
@@ -128,7 +128,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "9";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.devyat_Click);
             // 
             // button8
             // 
@@ -138,7 +138,7 @@
             this.button8.TabIndex = 8;
             this.button8.Text = "-";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.minus_Click);
             // 
             // button9
             // 
@@ -148,7 +148,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "4";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.chetire_Click);
             // 
             // button10
             // 
@@ -158,7 +158,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "5";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.five_Click);
             // 
             // button11
             // 
@@ -168,7 +168,7 @@
             this.button11.TabIndex = 11;
             this.button11.Text = "6";
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.six_Click);
             // 
             // button12
             // 
@@ -178,17 +178,17 @@
             this.button12.TabIndex = 12;
             this.button12.Text = "*";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.umnojenie_Click);
             // 
-            // button13
+            // One
             // 
-            this.button13.Location = new System.Drawing.Point(12, 238);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(90, 41);
-            this.button13.TabIndex = 13;
-            this.button13.Text = "1";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.One.Location = new System.Drawing.Point(12, 238);
+            this.One.Name = "One";
+            this.One.Size = new System.Drawing.Size(90, 41);
+            this.One.TabIndex = 13;
+            this.One.Text = "1";
+            this.One.UseVisualStyleBackColor = true;
+            this.One.Click += new System.EventHandler(this.One_Click);
             // 
             // button14
             // 
@@ -198,7 +198,7 @@
             this.button14.TabIndex = 14;
             this.button14.Text = "2";
             this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.Click += new System.EventHandler(this.Two_Click);
             // 
             // button15
             // 
@@ -208,7 +208,7 @@
             this.button15.TabIndex = 15;
             this.button15.Text = "3";
             this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.button15.Click += new System.EventHandler(this.three_Click);
             // 
             // button16
             // 
@@ -218,7 +218,7 @@
             this.button16.TabIndex = 16;
             this.button16.Text = "/";
             this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.button16.Click += new System.EventHandler(this.delenie_Click);
             // 
             // button17
             // 
@@ -228,7 +228,7 @@
             this.button17.TabIndex = 17;
             this.button17.Text = "0";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button17.Click += new System.EventHandler(this.Zero_Click);
             // 
             // button18
             // 
@@ -238,7 +238,7 @@
             this.button18.TabIndex = 18;
             this.button18.Text = ".";
             this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
+            this.button18.Click += new System.EventHandler(this.zapyataya_Click);
             // 
             // button19
             // 
@@ -248,7 +248,7 @@
             this.button19.TabIndex = 19;
             this.button19.Text = "=";
             this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button19.Click += new System.EventHandler(this.Ravno_Click);
             // 
             // label1
             // 
@@ -270,7 +270,7 @@
             this.button2.TabIndex = 22;
             this.button2.Text = "Cos";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.cos_Click);
             // 
             // button20
             // 
@@ -280,7 +280,7 @@
             this.button20.TabIndex = 23;
             this.button20.Text = "tg";
             this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.button20.Click += new System.EventHandler(this.tg_Click);
             // 
             // button21
             // 
@@ -290,7 +290,7 @@
             this.button21.TabIndex = 24;
             this.button21.Text = "ctg";
             this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.button21.Click += new System.EventHandler(this.ctg_Click);
             // 
             // button1
             // 
@@ -300,7 +300,7 @@
             this.button1.TabIndex = 25;
             this.button1.Text = "Sin";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.sin_Click);
             // 
             // button22
             // 
@@ -310,7 +310,7 @@
             this.button22.TabIndex = 26;
             this.button22.Text = "Кв. корень";
             this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button22.Click += new System.EventHandler(this.koren_Click);
             // 
             // button23
             // 
@@ -320,17 +320,18 @@
             this.button23.TabIndex = 27;
             this.button23.Text = "Возв. в квадрат";
             this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.button23.Click += new System.EventHandler(this.kvadrat_Click);
             // 
-            // tabControl1
+            // Закладка2
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-1, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(553, 392);
-            this.tabControl1.TabIndex = 28;
+            this.Закладка2.Controls.Add(this.tabPage1);
+            this.Закладка2.Controls.Add(this.tabPage2);
+            this.Закладка2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Закладка2.Location = new System.Drawing.Point(-1, 0);
+            this.Закладка2.Name = "Закладка2";
+            this.Закладка2.SelectedIndex = 0;
+            this.Закладка2.Size = new System.Drawing.Size(553, 392);
+            this.Закладка2.TabIndex = 28;
             // 
             // tabPage1
             // 
@@ -354,7 +355,7 @@
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.button12);
             this.tabPage1.Controls.Add(this.button23);
-            this.tabPage1.Controls.Add(this.button13);
+            this.tabPage1.Controls.Add(this.One);
             this.tabPage1.Controls.Add(this.button22);
             this.tabPage1.Controls.Add(this.button19);
             this.tabPage1.Controls.Add(this.button8);
@@ -380,49 +381,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(545, 366);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Конвертатор";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(9, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(360, 69);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(178, 20);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(213, 69);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(117, 24);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "В двоичную";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(213, 108);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(152, 24);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "В восьмеричную";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.tabPage2.Text = "Перевод в сист. счисл.";
             // 
             // radioButton3
             // 
@@ -437,18 +396,60 @@
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton2.Location = new System.Drawing.Point(213, 108);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(152, 24);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "В восьмеричную";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButton1.Location = new System.Drawing.Point(213, 69);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(117, 24);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "В двоичную";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(360, 69);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(178, 20);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(9, 72);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(178, 20);
+            this.textBox2.TabIndex = 0;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(553, 394);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Закладка2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Калькулятор Ипполитова";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.Закладка2.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -470,7 +471,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button One;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button button16;
@@ -484,7 +485,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl Закладка2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.RadioButton radioButton1;
