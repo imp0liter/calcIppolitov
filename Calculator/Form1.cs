@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Calculator
 {
@@ -15,12 +16,13 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         double a, b;
         int count;
         bool znak = true;
-
+        
 
         private void Zero_Click(object sender, EventArgs e) // вывод нуля
         {
@@ -239,7 +241,7 @@ namespace Calculator
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e) // конвертирование в двоичную
         {
-            if (radioButton1.Checked)
+            if (radioButton1.Checked == true)
             {
                 int i = Convert.ToInt32(textBox2.Text);
                 textBox3.Text = Convert.ToString(i, 2);
@@ -248,7 +250,7 @@ namespace Calculator
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e) // конвертирование в восьмеричную
         {
-            if (radioButton2.Checked)
+            if (radioButton2.Checked == true)
             {
                 int i = Convert.ToInt32(textBox2.Text);
                 textBox3.Text = Convert.ToString(i, 8);
@@ -257,10 +259,46 @@ namespace Calculator
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e) // конвертирование в шеснадцатиричную
         {
-            if (radioButton3.Checked)
+            if (radioButton3.Checked == true)
             {
                 int i = Convert.ToInt32(textBox2.Text);
                 textBox3.Text = Convert.ToString(i, 16);
+            }
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e) // подсчёт длины строк
+        {
+            if (radioButton4.Checked == true)
+            {
+                int s = richTextBox1.TextLength;
+                string bukovki = Convert.ToString(s);
+                richTextBox1.Text = Convert.ToString(bukovki);
+            }
+                    
+        }
+
+        public void radioButton5_CheckedChanged(object sender, EventArgs e) // преобразование всех букв в заглавные
+        {
+            if (radioButton5.Checked == true)
+            {
+                richTextBox1.Text = richTextBox1.Text.ToUpper();
+            }
+        }
+
+        private void radioButton6_CheckedChanged(object sender, EventArgs e) // преобразование всех букв в прописные 
+        {
+            if (radioButton6.Checked == true)
+            {
+                richTextBox1.Text = richTextBox1.Text.ToLower();
+            }
+        }
+
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton7.Checked == true)
+            {
+                
             }
         }
 
@@ -279,6 +317,31 @@ namespace Calculator
 
         }
 
+        private void textBox4_TextChanged(object sender, EventArgs e) // текстбокс для вывода результатов в строковом калькуляторе
+        {
+
+        }
+
+        private void CalcPage1_Click(object sender, EventArgs e) // область кнопок/текстбокса калькулятора
+        {
+
+        }
+
+        private void PerevodSSPage2_Click(object sender, EventArgs e) // область радиокнопок/текстбокса переводчика в сс
+        {
+
+        }
+
+        private void StrockovCalcPage3_Click(object sender, EventArgs e) // область радиокнопок/текстбоксов в строковом калькуляторе
+        {
+
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e) // РИЧ текстбокс, судя по описанию отличается от обычного возможностью редактирования введённого
+        {
+
+        }
+
 
         private void Form1_Load(object sender, EventArgs e) // окно программы
         {
@@ -286,6 +349,6 @@ namespace Calculator
         }
         
 
-    }   
+    }  
 
 }

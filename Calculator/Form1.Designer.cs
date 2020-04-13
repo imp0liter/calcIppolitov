@@ -55,16 +55,25 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.Закладка2 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.CalcPage1 = new System.Windows.Forms.TabPage();
+            this.PerevodSSPage2 = new System.Windows.Forms.TabPage();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.StrockovCalcPage3 = new System.Windows.Forms.TabPage();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.Закладка2.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.CalcPage1.SuspendLayout();
+            this.PerevodSSPage2.SuspendLayout();
+            this.StrockovCalcPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -324,8 +333,9 @@
             // 
             // Закладка2
             // 
-            this.Закладка2.Controls.Add(this.tabPage1);
-            this.Закладка2.Controls.Add(this.tabPage2);
+            this.Закладка2.Controls.Add(this.CalcPage1);
+            this.Закладка2.Controls.Add(this.PerevodSSPage2);
+            this.Закладка2.Controls.Add(this.StrockovCalcPage3);
             this.Закладка2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Закладка2.Location = new System.Drawing.Point(-1, 0);
             this.Закладка2.Name = "Закладка2";
@@ -333,55 +343,57 @@
             this.Закладка2.Size = new System.Drawing.Size(553, 392);
             this.Закладка2.TabIndex = 28;
             // 
-            // tabPage1
+            // CalcPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.Black;
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button15);
-            this.tabPage1.Controls.Add(this.button18);
-            this.tabPage1.Controls.Add(this.button7);
-            this.tabPage1.Controls.Add(this.button11);
-            this.tabPage1.Controls.Add(this.button14);
-            this.tabPage1.Controls.Add(this.button9);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button21);
-            this.tabPage1.Controls.Add(this.button17);
-            this.tabPage1.Controls.Add(this.button10);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button6);
-            this.tabPage1.Controls.Add(this.button16);
-            this.tabPage1.Controls.Add(this.button20);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button12);
-            this.tabPage1.Controls.Add(this.button23);
-            this.tabPage1.Controls.Add(this.One);
-            this.tabPage1.Controls.Add(this.button22);
-            this.tabPage1.Controls.Add(this.button19);
-            this.tabPage1.Controls.Add(this.button8);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(545, 366);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Калькулятор";
+            this.CalcPage1.BackColor = System.Drawing.Color.Black;
+            this.CalcPage1.Controls.Add(this.button2);
+            this.CalcPage1.Controls.Add(this.button15);
+            this.CalcPage1.Controls.Add(this.button18);
+            this.CalcPage1.Controls.Add(this.button7);
+            this.CalcPage1.Controls.Add(this.button11);
+            this.CalcPage1.Controls.Add(this.button14);
+            this.CalcPage1.Controls.Add(this.button9);
+            this.CalcPage1.Controls.Add(this.button5);
+            this.CalcPage1.Controls.Add(this.button21);
+            this.CalcPage1.Controls.Add(this.button17);
+            this.CalcPage1.Controls.Add(this.button10);
+            this.CalcPage1.Controls.Add(this.label1);
+            this.CalcPage1.Controls.Add(this.button6);
+            this.CalcPage1.Controls.Add(this.button16);
+            this.CalcPage1.Controls.Add(this.button20);
+            this.CalcPage1.Controls.Add(this.textBox1);
+            this.CalcPage1.Controls.Add(this.button1);
+            this.CalcPage1.Controls.Add(this.button12);
+            this.CalcPage1.Controls.Add(this.button23);
+            this.CalcPage1.Controls.Add(this.One);
+            this.CalcPage1.Controls.Add(this.button22);
+            this.CalcPage1.Controls.Add(this.button19);
+            this.CalcPage1.Controls.Add(this.button8);
+            this.CalcPage1.Controls.Add(this.button3);
+            this.CalcPage1.Controls.Add(this.button4);
+            this.CalcPage1.Location = new System.Drawing.Point(4, 22);
+            this.CalcPage1.Name = "CalcPage1";
+            this.CalcPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.CalcPage1.Size = new System.Drawing.Size(545, 366);
+            this.CalcPage1.TabIndex = 0;
+            this.CalcPage1.Text = "Калькулятор";
+            this.CalcPage1.Click += new System.EventHandler(this.CalcPage1_Click);
             // 
-            // tabPage2
+            // PerevodSSPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.DarkRed;
-            this.tabPage2.Controls.Add(this.radioButton3);
-            this.tabPage2.Controls.Add(this.radioButton2);
-            this.tabPage2.Controls.Add(this.radioButton1);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(545, 366);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Перевод в сист. счисл.";
+            this.PerevodSSPage2.BackColor = System.Drawing.Color.DarkRed;
+            this.PerevodSSPage2.Controls.Add(this.radioButton3);
+            this.PerevodSSPage2.Controls.Add(this.radioButton2);
+            this.PerevodSSPage2.Controls.Add(this.radioButton1);
+            this.PerevodSSPage2.Controls.Add(this.textBox3);
+            this.PerevodSSPage2.Controls.Add(this.textBox2);
+            this.PerevodSSPage2.Location = new System.Drawing.Point(4, 22);
+            this.PerevodSSPage2.Name = "PerevodSSPage2";
+            this.PerevodSSPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.PerevodSSPage2.Size = new System.Drawing.Size(545, 366);
+            this.PerevodSSPage2.TabIndex = 1;
+            this.PerevodSSPage2.Text = "Перевод в сист. счисл.";
+            this.PerevodSSPage2.Click += new System.EventHandler(this.PerevodSSPage2_Click);
             // 
             // radioButton3
             // 
@@ -438,6 +450,83 @@
             this.textBox2.TabIndex = 0;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
+            // StrockovCalcPage3
+            // 
+            this.StrockovCalcPage3.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.StrockovCalcPage3.Controls.Add(this.radioButton7);
+            this.StrockovCalcPage3.Controls.Add(this.radioButton6);
+            this.StrockovCalcPage3.Controls.Add(this.radioButton5);
+            this.StrockovCalcPage3.Controls.Add(this.radioButton4);
+            this.StrockovCalcPage3.Controls.Add(this.richTextBox1);
+            this.StrockovCalcPage3.Location = new System.Drawing.Point(4, 22);
+            this.StrockovCalcPage3.Name = "StrockovCalcPage3";
+            this.StrockovCalcPage3.Size = new System.Drawing.Size(545, 366);
+            this.StrockovCalcPage3.TabIndex = 2;
+            this.StrockovCalcPage3.Text = "Строковый калькулятор";
+            this.StrockovCalcPage3.Click += new System.EventHandler(this.StrockovCalcPage3_Click);
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(9, 254);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(125, 17);
+            this.radioButton6.TabIndex = 4;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "маленькие буковки";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(9, 212);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(129, 17);
+            this.radioButton5.TabIndex = 3;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "БОЛЬШИЕ БУКОВЫ";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton5.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Location = new System.Drawing.Point(9, 166);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(167, 17);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Посчитать кол-во символов";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(9, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(518, 124);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(305, 212);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(83, 17);
+            this.radioButton7.TabIndex = 5;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Статистика";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,10 +539,13 @@
             this.Text = "Калькулятор Ипполитова";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Закладка2.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.CalcPage1.ResumeLayout(false);
+            this.CalcPage1.PerformLayout();
+            this.PerevodSSPage2.ResumeLayout(false);
+            this.PerevodSSPage2.PerformLayout();
+            this.StrockovCalcPage3.ResumeLayout(false);
+            this.StrockovCalcPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -486,13 +578,20 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.TabControl Закладка2;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage CalcPage1;
+        private System.Windows.Forms.TabPage PerevodSSPage2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TabPage StrockovCalcPage3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
+        private System.Windows.Forms.RadioButton radioButton7;
     }
 }
 
