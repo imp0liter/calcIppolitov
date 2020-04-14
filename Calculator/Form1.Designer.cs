@@ -63,12 +63,19 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.StrockovCalcPage3 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Закладка2.SuspendLayout();
             this.CalcPage1.SuspendLayout();
             this.PerevodSSPage2.SuspendLayout();
@@ -453,11 +460,18 @@
             // StrockovCalcPage3
             // 
             this.StrockovCalcPage3.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.StrockovCalcPage3.Controls.Add(this.label6);
+            this.StrockovCalcPage3.Controls.Add(this.label5);
+            this.StrockovCalcPage3.Controls.Add(this.label4);
+            this.StrockovCalcPage3.Controls.Add(this.label3);
+            this.StrockovCalcPage3.Controls.Add(this.label2);
+            this.StrockovCalcPage3.Controls.Add(this.radioButton8);
             this.StrockovCalcPage3.Controls.Add(this.radioButton7);
             this.StrockovCalcPage3.Controls.Add(this.radioButton6);
             this.StrockovCalcPage3.Controls.Add(this.radioButton5);
             this.StrockovCalcPage3.Controls.Add(this.radioButton4);
             this.StrockovCalcPage3.Controls.Add(this.richTextBox1);
+            this.StrockovCalcPage3.Controls.Add(this.textBox4);
             this.StrockovCalcPage3.Location = new System.Drawing.Point(4, 22);
             this.StrockovCalcPage3.Name = "StrockovCalcPage3";
             this.StrockovCalcPage3.Size = new System.Drawing.Size(545, 366);
@@ -465,10 +479,89 @@
             this.StrockovCalcPage3.Text = "Строковый калькулятор";
             this.StrockovCalcPage3.Click += new System.EventHandler(this.StrockovCalcPage3_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(408, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Согласных:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(408, 235);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Гласных:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(408, 212);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Строк:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(408, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Цифр:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(408, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Букв:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(316, 157);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(86, 17);
+            this.radioButton8.TabIndex = 6;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Статистика:";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged_1);
+            // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(9, 235);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(134, 17);
+            this.radioButton7.TabIndex = 5;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Исправление ошибок";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            // 
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(9, 254);
+            this.radioButton6.Location = new System.Drawing.Point(9, 212);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(125, 17);
             this.radioButton6.TabIndex = 4;
@@ -480,7 +573,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(9, 212);
+            this.radioButton5.Location = new System.Drawing.Point(9, 189);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(129, 17);
             this.radioButton5.TabIndex = 3;
@@ -492,7 +585,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(9, 166);
+            this.radioButton4.Location = new System.Drawing.Point(9, 168);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(167, 17);
             this.radioButton4.TabIndex = 2;
@@ -515,17 +608,13 @@
             this.fileSystemWatcher1.EnableRaisingEvents = true;
             this.fileSystemWatcher1.SynchronizingObject = this;
             // 
-            // radioButton7
+            // textBox4
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(305, 212);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(83, 17);
-            this.radioButton7.TabIndex = 5;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Статистика";
-            this.radioButton7.UseVisualStyleBackColor = true;
-            this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
+            this.textBox4.Location = new System.Drawing.Point(402, 157);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(124, 130);
+            this.textBox4.TabIndex = 12;
             // 
             // Form1
             // 
@@ -592,6 +681,13 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
         private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 

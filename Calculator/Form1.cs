@@ -294,12 +294,64 @@ namespace Calculator
         }
 
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        private void radioButton7_CheckedChanged(object sender, EventArgs e) // исправитель ошибок
         {
-            if (radioButton7.Checked == true)
+        string text = richTextBox1.Text;
+        string[] trues = new string[] { "жи", "ши", "ча", "ща", "чу", "щу" };
+        string[] errors = new string[] { "жы", "шы", "чя", "щя", "чю", "щю" };
+        for (int i = 0; i < richTextBox1.Text.Length; i++)
             {
-                
+            for (int j = 0; j < errors.Length; j++)
+            {
+                 try
+                    {
+                      if (richTextBox1.Text.Contains(errors[j])) 
+                          text = richTextBox1.Text.Replace(errors[j], trues[j]);
+                          richTextBox1.Text = text;
+                 }
+                 catch (FormatException)
+                    {
+                    MessageBox.Show("Строка не может быть пустой!");
+                    }
+                 }
             }
+        }
+
+        private void radioButton8_CheckedChanged_1(object sender, EventArgs e)
+        {
+            int S1 = 0;
+            int S2 = 0;
+            List<Char> glasnie = new List<char>()
+                { 'у', 'е', 'ы', 'а', 'о', 'э', 'я', 'и', 'ё', 'ю' };
+            List<Char> soglasnie = new List<char>()
+                { 'ц', 'к', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ф', 'в', 'п', 'р', 'л', 'д', 'ж', 'ч', 'с', 'м', 'т', 'б' };
+            foreach (char chr in richTextBox1.Text)
+            {
+                if (glasnie.Contains(chr))
+                {
+                    S1++;
+                }
+                if (soglasnie.Contains(chr))
+                {
+                    S2++;
+                }
+            }
+            string input = richTextBox1.Text;
+            int V1 = 0;
+            int V2= 0;
+            for (int i = 0; i < input.Length; i++)
+            {
+
+                if (char.IsLetter(input[i]))
+                    V1++;
+                if (char.IsDigit(input[i]))
+                    V2++;
+            }
+            label2.Text = ("Букв : " + V1.ToString());
+            label3.Text = ("Цифр : " + V2.ToString());
+            label4.Text = ("Строк : " + richTextBox1.Lines.Length);
+            label5.Text = ("Гласных : " + S1.ToString());
+            label6.Text = ("Согласных : " + S2.ToString());
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e) // текстбокс калькулятора
@@ -342,6 +394,30 @@ namespace Calculator
 
         }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void Form1_Load(object sender, EventArgs e) // окно программы
         {
